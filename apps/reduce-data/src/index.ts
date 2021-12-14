@@ -29,12 +29,12 @@ type MonthlyGrowth = {
  * the Frostbook and Blitter platforms.
  */
 type MonthlyChangeReport = {
-  frostbook : MonthlyChangeReport;
-  blitter : MonthlyChangeReport;
+  frostbook : MonthlyGrowth[];
+  blitter : MonthlyGrowth[];
 };
 
 /**
- * Generate data for the monthly change report.
+ * @TODO: Generate data for the monthly change report.
  *
  * @return array of 12 MonthlyChangeReport objects detailing results for the last year.
  */
@@ -42,9 +42,10 @@ export function runMonthlyChangeReport() : MonthlyChangeReport | null {
     return null;
 }
 
-
+// Run this to see the shape of the raw data available to runMonthlyChangeReport
 printExampleData();
 
+// @TODO Run to confirm successful implementation of runMonthlyChangeReport
 // const output = runMonthlyChangeReport();
 // console.log(JSON.stringify(output, null, 2);
 
