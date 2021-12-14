@@ -1,0 +1,25 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@rush-temp/reduce-data': file:./projects/reduce-data.tgz
+  typescript: ^4.5.4
+
+dependencies:
+  '@rush-temp/reduce-data': file:projects/reduce-data.tgz
+  typescript: 4.5.4
+
+packages:
+
+  /typescript/4.5.4:
+    resolution: {integrity: sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
+  file:projects/reduce-data.tgz:
+    resolution: {integrity: sha512-Odio2L86lnCdFUnvpzT++fOLKkJiA5ZT80hrALmE3ePKua+EZmW7/6D7omRuy0o3gzmM1UtCWi+i5a4ersfm0g==, tarball: file:projects/reduce-data.tgz}
+    name: '@rush-temp/reduce-data'
+    version: 0.0.0
+    dependencies:
+      typescript: 4.5.4
+    dev: false
